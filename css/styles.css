@@ -726,10 +726,11 @@ img {
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
 .page-footer .container{
-    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-  }
+    padding-left: 108px;
+    padding-right: 164px; 
+}
 }
 
 @media only screen and (min-width: 1158px) {
@@ -899,9 +900,9 @@ img {
     gap: 24px;
   }
 
-.footer_box_subscribe {
+/* .footer_box_subscribe {
     padding-right: 42px;
-}
+} */
 }
 
 @media only screen and (min-width: 1158px) {
@@ -1009,14 +1010,21 @@ img {
     padding: 72px 16px 24px 16px;
 }
 
-@media only screen and (min-width: 1158px) {
-.modal {
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 408px;
-    min-height: 584px;
-    padding: 72px 24px 24px 24px;
+@media only screen and (min-width: 768px) {
+    .modal {
+        top: 96px;
+        transform: translate(-50%);
+        width: 408px;
+        min-height: 584px;
+        padding: 72px 24px 24px 24px;
+    }
 }
+
+@media only screen and (min-width: 1158px) {
+    .modal {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .modal_btn_close {
@@ -1036,7 +1044,7 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 768px) {
 .modal_btn_close{
     left: 360px;
   }
@@ -1072,7 +1080,7 @@ img {
     width: 258;
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 768px) {
 .modal_title {
     width: 360px;
   }
@@ -1109,7 +1117,7 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 768px) {
 .modal-input{
     width: 100%;
   }
@@ -1202,7 +1210,7 @@ img {
     fill: transparent;
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 768px) {
 .modal_span_checkbox {
     display: inline-flex;
     justify-content: center;
@@ -1215,7 +1223,7 @@ img {
     display: inline-block;
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 768px) {
 .position_text_checkbox {
         width: 100%;
     }
