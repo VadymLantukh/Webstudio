@@ -51,7 +51,7 @@ img {
 }
 
 .container {
-    max-width: 320px;
+    min-width: 320px;
     padding: 0 16px;
     margin: 0 auto;
 }
@@ -257,8 +257,13 @@ img {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
-.main-section {
+.main-section .section{
     min-height: 436px;
+    padding: 112px 0;
+  }
+
+  .section {
+    padding: 96px 0;
   }
 }
 
@@ -298,6 +303,7 @@ img {
             url(../images/people-office.jpg);
         padding: 188px 0;
         max-width: 1440px;
+        margin: 0 auto;
     }
 }
 
@@ -766,6 +772,7 @@ img {
 @media only screen and (min-width: 1158px) {
 .footer-box-logo{
     margin-right: 120px;
+    text-align: start;
   }
 }
 
@@ -796,7 +803,7 @@ img {
 
 @media only screen and (min-width: 1158px) {
 .paragraph-footer {
-    text-align: center;
+    text-align: start;
     margin-bottom: 0;
 }
 }
@@ -1278,6 +1285,8 @@ img {
     min-height: 640px;
     background: #fff;
     opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1290,6 +1299,7 @@ img {
 .menu_mobile.is-open {
     opacity: 1;
     pointer-events: auto;
+    visibility: visible;
 }
 
 .menu_mobile-btn-close {
@@ -1325,8 +1335,13 @@ img {
 .menu-nav-link-mobile {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+}
+
+.menu-address-link-mobile:hover,
+.menu-nav-link-mobile:focus {
+    color: #404BBF;
 }
 
 .menu-address-item-mobile:not(:last-child) {
@@ -1344,6 +1359,11 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
     font-style: normal;
+}
+
+.menu-address-link-mobile:hover,
+.menu-address-link-mobile:focus {
+    color: #4D5AE5;
 }
 
 .color-first-item {
