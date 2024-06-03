@@ -403,7 +403,6 @@ img {
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
     .feature-section-list {
         justify-content: space-between;
-        /* width: 100%; */
         flex-wrap: wrap;
         flex-direction: row;
         gap: 72px;
@@ -719,7 +718,7 @@ img {
 .page-footer {
     background-color: #2e2f42;
     padding: 100px 0;
-    min-height: 664px;
+    height: 664px;
 }
 
 .page-footer .container {
@@ -745,13 +744,13 @@ img {
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
     .page-footer {
-        min-height: 456px;
+        height: 456px;
     }
 }
 
 @media only screen and (min-width: 1158px) {
     .page-footer {
-        min-height: 312px;
+        height: 312px;
     }
 }
 
