@@ -379,8 +379,7 @@ img {
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
     .feature-section .container {
-        width: 736px;
-        height: 312px;
+        max-height: 312px;
     }
 }
 
@@ -405,13 +404,14 @@ img {
         justify-content: space-between;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: 72px;
+        gap: 0;
+        row-gap: 24px; 
     }
 }
 
 .feature-section-item {
     text-align: center;
-    max-width: 288px;
+    width: 288px;
     line-height: 1.5;
 }
 
@@ -474,7 +474,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: start;
-    width: 288px;
 }
 
 @media only screen and (min-width: 1158px) {
@@ -717,7 +716,7 @@ img {
 
 .page-footer {
     background-color: #2e2f42;
-    padding: 100px 0;
+    padding: 96px 0;
     height: 664px;
 }
 
@@ -1007,7 +1006,8 @@ img {
 }
 
 .modal {
-    width: 288px;
+    min-width: 288px;
+    width: 100%;
     min-height: 623px;
     position: absolute;
     top: 8px;
@@ -1047,7 +1047,6 @@ img {
     width: 24px;
     height: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    left: 240px;
     top: 24px;
     margin-bottom: 24px;
     background-color: transparent;
@@ -1119,7 +1118,8 @@ img {
 
 .modal-input {
     border-radius: 4px;
-    width: 256px;
+    min-width: 256px;
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     padding-left: 38px;
@@ -1229,7 +1229,6 @@ img {
 }
 
 .position_text_checkbox {
-    width: 231px;
     display: inline-block;
 }
 
