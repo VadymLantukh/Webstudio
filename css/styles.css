@@ -771,6 +771,7 @@ img {
 @media only screen and (min-width: 1158px) {
     .footer-box-logo {
         margin-right: 120px;
+        margin-bottom: 0px;
         text-align: start;
         align-items: start;
     }
