@@ -289,7 +289,6 @@ img {
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/people-office-tab@1x.jpg);
-        max-width: 768px;
         margin: 0 auto;
     }
 }
