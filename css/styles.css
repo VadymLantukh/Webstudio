@@ -33,8 +33,15 @@ img {
 }
 
 .section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+@media only screen and (min-width: 1158px) {
+   .section {
     padding-top: 120px;
     padding-bottom: 120px;
+}  
 }
 
 .visually-hidden {
@@ -68,7 +75,6 @@ img {
 @media only screen and (min-width: 768px) and (max-width:1157px) {
     .container {
         max-width: 768px;
-        margin: 0;
     }
 }
 
@@ -284,6 +290,7 @@ img {
                 rgba(46, 47, 66, 0.7)),
             url(../images/people-office-tab@1x.jpg);
         max-width: 768px;
+        margin: 0 auto;
     }
 }
 
@@ -395,7 +402,8 @@ img {
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
     .feature-section-list {
-        min-width: 736px;
+        justify-content: space-between;
+        /* width: 100%; */
         flex-wrap: wrap;
         flex-direction: row;
         gap: 72px;
@@ -406,18 +414,13 @@ img {
     text-align: center;
     max-width: 288px;
     line-height: 1.5;
-    width: calc(100% - 24px / 4);
-    min-height: 120px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
     .feature-section-item {
         text-align: start;
-        width: calc(100% - 24px / 2);
-    }
-
-    .feature-section-item:not(:last-child) {
-        margin-right: 24px;
+        width: calc((100% - 24px) / 2);
+        height: 120px;
     }
 }
 
@@ -425,7 +428,7 @@ img {
     .feature-section-item {
         text-align: start;
         line-height: 1.5;
-        width: calc(100% - 24px / 4);
+        width: calc((100% - 24px) / 4);
         min-height: 224px;
     }
 }
@@ -473,12 +476,6 @@ img {
     letter-spacing: 0.02em;
     text-align: start;
     width: 288px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1157px) {
-    .feature-section-paragraph-item {
-        width: 356px;
-    }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -769,6 +766,7 @@ img {
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
     .footer-box-logo {
         text-align: start;
+        align-items: flex-start;
         margin-right: 24px;
     }
 }
@@ -818,12 +816,6 @@ img {
     margin: 0 auto 72px auto;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1157px) {
-    .footer-box-social-icon {
-        margin: 0;
-    }
-}
-
 @media only screen and (min-width: 1158px) {
     .footer-box-social-icon {
         margin-right: 80px;
@@ -836,6 +828,18 @@ img {
     display: flex;
     gap: 16px;
     margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+    .footer-box-social-icon {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+    .footer-list-box-icon {
+        margin: 0;
+    }
 }
 
 .footer-item-icon {
@@ -910,10 +914,6 @@ img {
         flex-direction: row;
         gap: 24px;
     }
-
-    /* .footer_box_subscribe {
-    padding-right: 42px;
-} */
 }
 
 @media only screen and (min-width: 1158px) {
