@@ -774,6 +774,7 @@ img {
     .footer-box-logo {
         margin-right: 120px;
         text-align: start;
+        align-items: start;
     }
 }
 
