@@ -126,8 +126,14 @@
 
                     <li class="team-section-item">
 
-                        <img class="team-section-img" srcset="./images/team-card-1_1x.jpg, ./images/team-card-1_2x.jpg"
+                           <picture> 
+                            <source
+                                srcset="./images/team-card-1_1x.jpg 1x, ./images/team-card-1_2x.jpg 2x"
+                                type="image/jpg"
+                            />
+                              <img class="team-section-img" 
                             src="./images/team-card-1_1x.jpg" alt="team-card-1" width="264" height="260" loading="lazy">
+                        </picture>
 
                         <div class="team-section-box">
                             <h3 class="team-section-title-item">Mark Guerrero</h3>
@@ -166,8 +172,14 @@
 
                     </li>
                     <li class="team-section-item">
-                        <img class="team-section-img" srcset="./images/team-card-2_1x.jpg, ./images/team-card-2_2x.jpg"
+                        <picture> 
+                            <source
+                                srcset="./images/team-card-2_1x.jpg 1x, ./images/team-card-2_2x.jpg 2x"
+                                type="image/jpg"
+                            />
+                              <img class="team-section-img" 
                             src="./images/team-card-2_1x.jpg" alt="team-card-2" width="264" height="260" loading="lazy">
+                        </picture>
                         <div class="team-section-box">
                             <h3 class="team-section-title-item">Tom Ford</h3>
                             <p class="team-section-paragraph-item">Frontend Developer</p>
@@ -204,8 +216,14 @@
                         </div>
                     </li>
                     <li class="team-section-item">
-                        <img class="team-section-img" srcset="./images/team-card-3_1x.jpg, ./images/team-card-3_2x.jpg"
+                        <picture> 
+                            <source
+                                srcset="./images/team-card-3_1x.jpg 1x, ./images/team-card-3_2x.jpg 2x"
+                                type="image/jpg"
+                            />
+                              <img class="team-section-img" 
                             src="./images/team-card-3_1x.jpg" alt="team-card-3" width="264" height="260" loading="lazy">
+                        </picture>
                         <div class="team-section-box">
                             <h3 class="team-section-title-item">Camila Garcia</h3>
                             <p class="team-section-paragraph-item">Marketing</p>
@@ -242,8 +260,15 @@
                         </div>
                     </li>
                     <li class="team-section-item">
-                        <img class="team-section-img" srcset="./images/team-card-4_1x.jpg, ./images/team-card-4_2x.jpg"
+                        <picture> 
+                            <source
+                                srcset="./images/team-card-4_1x.jpg 1x, ./images/team-card-4_2x.jpg 2x"
+                                type="image/jpg"
+                            />
+                              <img class="team-section-img" 
                             src="./images/team-card-4_1x.jpg" alt="team-card-4" width="264" height="260" loading="lazy">
+                        </picture>
+
 
                         <div class="team-section-box">
                             <h3 class="team-section-title-item">Daniel Wilson</h3>
@@ -297,8 +322,20 @@
                     <li class="portfolio-section-item">
 
                         <div class="portfolio-section-box-overlay">
-                            <img class="portfolio-section-img" src="./images/projet-cart-1.jpg"
-                                alt="photo-project-cart-1" width="360" height="300" loading="lazy">
+                            <picture>
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/projet-cart-1.jpg 1x, ./images/projet-cart-1_2x.jpg 2x" width="360"
+                                    height="300" type="image/jpg" />
+
+                                <source media="(min-width: 320px)"
+                                    srcset="../images/images_mob/projet-cart-1_mob-1x.jpg 1x, ../images/images_mob/projet-cart-1_mob-2x.jpg 2x"
+                                    width="288" height="280" type="image/jpg" />
+
+                                <img class="portfolio-section-img" src="../images/images_mob/projet-cart-1_mob-1x.jpg"
+                                    alt="photo-project-cart-1" width="288" height="280" loading="lazy">
+
+                            </picture>
 
                             <p class="portfolio-section-overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -315,8 +352,20 @@
                     </li>
                     <li class="portfolio-section-item">
                         <div class="portfolio-section-box-overlay">
-                            <img class="portfolio-section-img" src="./images/projet-cart-2.jpg"
-                                alt="photo-project-cart-1" width="360" height="300" loading="lazy">
+                            <picture>
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/projet-cart-2.jpg 1x, ./images/projet-cart-2_2x.jpg 2x" width="360"
+                                    height="300" type="image/jpg" />
+
+                                <source media="(min-width: 320px)"
+                                    srcset="../images/images_mob/projet-cart-2_mob-1x.jpg 1x, ../images/images_mob/projet-cart-2_mob-2x.jpg 2x"
+                                    width="288" height="280" type="image/jpg" />
+
+                                <img class="portfolio-section-img" src="../images/images_mob/projet-cart-2_mob-1x.jpg"
+                                    alt="photo-project-cart-1" width="288" height="280" loading="lazy">
+
+                            </picture>
 
                             <p class="portfolio-section-overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -334,8 +383,20 @@
                     </li>
                     <li class="portfolio-section-item">
                         <div class="portfolio-section-box-overlay">
-                            <img class="portfolio-section-img" src="./images/projet-cart-3.jpg"
-                                alt="photo-project-cart-1" width="360" height="300" loading="lazy">
+                            <picture>
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/projet-cart-3.jpg 1x, ./images/projet-cart-3_2x.jpg 2x" width="360"
+                                    height="300" type="image/jpg" />
+
+                                <source media="(min-width: 320px)"
+                                    srcset="../images/images_mob/projet-cart-3_mob-1x.jpg 1x, ../images/images_mob/projet-cart-3_mob-2x.jpg 2x"
+                                    width="288" height="280" type="image/jpg" />
+
+                                <img class="portfolio-section-img" src="../images/images_mob/projet-cart-3_mob-1x.jpg"
+                                    alt="photo-project-cart-1" width="288" height="280" loading="lazy">
+
+                            </picture>
 
                             <p class="portfolio-section-overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -352,8 +413,20 @@
                     </li>
                     <li class="portfolio-section-item">
                         <div class="portfolio-section-box-overlay">
-                            <img class="portfolio-section-img" src="./images/projet-cart-4.jpg"
-                                alt="photo-project-cart-1" width="360" height="300" loading="lazy">
+                            <picture>
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/projet-cart-4.jpg 1x, ./images/projet-cart-4_2x.jpg 2x" width="360"
+                                    height="300" type="image/jpg" />
+
+                                <source media="(min-width: 320px)"
+                                    srcset="../images/images_mob/projet-cart-4_mob-1x.jpg 1x, ../images/images_mob/projet-cart-4_mob-2x.jpg 2x"
+                                    width="288" height="280" type="image/jpg" />
+
+                                <img class="portfolio-section-img" src="../images/images_mob/projet-cart-4_mob-1x.jpg"
+                                    alt="photo-project-cart-1" width="288" height="280" loading="lazy">
+
+                            </picture>
 
                             <p class="portfolio-section-overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -370,8 +443,20 @@
                     </li>
                     <li class="portfolio-section-item">
                         <div class="portfolio-section-box-overlay">
-                            <img class="portfolio-section-img" src="./images/projet-cart-5.jpg"
-                                alt="photo-project-cart-1" width="360" height="300" loading="lazy">
+                            <picture>
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/projet-cart-5.jpg 1x, ./images/projet-cart-5_2x.jpg 2x" width="360"
+                                    height="300" type="image/jpg" />
+
+                                <source media="(min-width: 320px)"
+                                    srcset="../images/images_mob/projet-cart-5_mob-1x.jpg 1x, ../images/images_mob/projet-cart-5_mob-2x.jpg 2x"
+                                    width="288" height="280" type="image/jpg" />
+
+                                <img class="portfolio-section-img" src="../images/images_mob/projet-cart-5_mob-1x.jpg"
+                                    alt="photo-project-cart-1" width="288" height="280" loading="lazy">
+
+                            </picture>
 
                             <p class="portfolio-section-overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -388,8 +473,20 @@
                     </li>
                     <li class="portfolio-section-item">
                         <div class="portfolio-section-box-overlay">
-                            <img class="portfolio-section-img" src="./images/projet-cart-6.jpg"
-                                alt="photo-project-cart-1" width="360" height="300" loading="lazy">
+                            <picture>
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/projet-cart-6.jpg 1x, ./images/projet-cart-6_2x.jpg 2x" width="360"
+                                    height="300" type="image/jpg" />
+
+                                <source media="(min-width: 320px)"
+                                    srcset="../images/images_mob/projet-cart-6_mob-1x.jpg 1x, ../images/images_mob/projet-cart-6_mob-2x.jpg 2x"
+                                    width="288" height="280" type="image/jpg" />
+
+                                <img class="portfolio-section-img" src="../images/images_mob/projet-cart-6_mob-1x.jpg"
+                                    alt="photo-project-cart-1" width="288" height="280" loading="lazy">
+
+                            </picture>
 
                             <p class="portfolio-section-overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
