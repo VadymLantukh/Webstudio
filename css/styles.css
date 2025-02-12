@@ -24,7 +24,7 @@ ol {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: currentColor;
 }
 
 img {
